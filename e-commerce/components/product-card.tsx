@@ -15,7 +15,7 @@ export const ProductCard = ({ product }: Props) => {
     <Link href={`/products/${product.id}`} className="block h-full">
       <Card className="group hover:shadow-2xl transition duration-300 py-0 h-full flex flex-col border-gray-300 gap-0">
         {product.images && product.images[0] && (
-          <div className="relative h-60 w-full">
+          <div className="relative h-80 w-full">
             <Image
               src={product.images[0]}
               alt={product.name}
@@ -39,7 +39,7 @@ export const ProductCard = ({ product }: Props) => {
 
           {price && price.unit_amount && (
             <p className="text-lg font-semibold text-gray-900">
-              ${(price.unit_amount / 100).toFixed(2)}
+              ₹{(price.unit_amount / 100).toFixed(2)}
             </p>
           )}
           <Button className="mt-4 bg-black text-white">
