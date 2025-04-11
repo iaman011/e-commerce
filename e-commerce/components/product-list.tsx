@@ -6,7 +6,7 @@ import { ProductCard } from "./product-card";
 import { useState } from "react";
 
 interface Props{
-    products: Stripe.Product[];
+    products: Stripe.Product[];  //here we fetch all the products from stripe to search
 }
 
 export const ProductList = ({products}: Props) => {

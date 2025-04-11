@@ -14,12 +14,12 @@ export default async function Home() {
   console.log(products);
   return (
     <div>
-      <section className="rounded-2xl bg-neutral-200 py-8 sm:py-12">
+      <section className="rounded-2xl bg-neutral-200 py-8 sm:py-2">
         <div className="mx-auto grid grid-cols-1 items-center justify-items-center gap-8 px-8 sm:px-16 md:grid-cols-2">
           <div className="max-w-md space-y-4">
             <h2 className="text-3xl font-bold tracking-tight md:text-4xl">
               <span className="text-black">Welcome to</span>{" "}
-              <span className="text-indigo-400">Aman Store</span>
+              <span className="text-indigo-400 font-medium">Aman Store</span>
             </h2>
             <p className="text-neutral-600">
               Discover the latest products at the best prices.
@@ -61,8 +61,8 @@ export default async function Home() {
         <Carousel products={products.data} />
       </section>
        <div className="pb-8">
-            <h1 className="text-3xl font-bold leading-none tracking-tight text-foreground text-center mb-8">
-                All Products
+            <h1 className="text-3xl font-bold leading-none tracking-tight text-center mb-6 text-indigo-300 p-2">
+            Our Products
               </h1>
               <ProductList products={products.data} />
             </div>

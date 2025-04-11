@@ -27,9 +27,9 @@ export const Navbar = () => {
   }, []);
 
   return (
-    <nav className="sticky top-0 z-50 bg-black shadow">
+    <nav className="sticky top-0 z-50 bg-neutral-500 shadow">
       <div className="container mx-auto flex items-center justify-between px-4 py-4">
-        <Link href="/" className="bg-black font-extrabold text-2xl text-indigo-400">
+        <Link href="/" className="text-neutral-900 font-bold text-2xl">
           Aman Store
         </Link>
         <div className="hidden md:flex space-x-6 text-white">

@@ -26,9 +26,15 @@ export const Carousel = ({ products }: Props) => {
 
   return (
     <div>
-      <Card className="relative overflow-hidden rounded-lg shadow-md border-gray-300">
+      
+      <Card className="relative overflow-hidden rounded-lg shadow-md border-gray-300 bg-neutral-100">
+      <div className="pb-8">
+            <h1 className="text-3xl font-bold leading-none tracking-tight text-center text-indigo-300 ">
+            Recommended Products
+              </h1>
+              </div>
         {currentProduct.images && currentProduct.images[0] && (
-          <div className="relative justify-between flex items-center h-180 w-150 ">
+          <div className="relative flex items-center justify-center h-[180px] w-[150px]">
             <Image
               alt={currentProduct.name}
               src={currentProduct.images[0]}
@@ -40,11 +46,11 @@ export const Carousel = ({ products }: Props) => {
         )}
         {/* cardcontent which will link to the title of the card and the price of it */}
         <CardContent className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50">
-          <CardTitle className="text-3xl font-bold text-white mb-2">
+          <CardTitle className="text-3xl font-bold text-black mb-2">
             {currentProduct.name}
           </CardTitle>
           {price && price.unit_amount && (
-            <p className="text-xl text-white">
+            <p className="text-xl text-black">
               ₹{(price.unit_amount / 100).toFixed(2)}
             </p>
           )}
