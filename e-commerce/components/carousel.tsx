@@ -40,13 +40,13 @@ export const Carousel = ({ products }: Props) => {
               src={currentProduct.images[0]}
               fill
               // priority
-              className="object-cover transition-opacity duration-500 ease-in-out"
+              className="object-cover transition-opacity duration-500 ease-in-out m-5"
             />
           </div>
         )}
         {/* cardcontent which will link to the title of the card and the price of it */}
         <CardContent className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50">
-          <CardTitle className="text-3xl font-bold text-black mb-2">
+          <CardTitle className="text-3xl font-bold text-black mb-2 text-balance text-center">
             {currentProduct.name}
           </CardTitle>
           {price && price.unit_amount && (
