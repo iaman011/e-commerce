@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 
 interface Props {
-  products: Stripe.Product;
+  products: Stripe.Product[];
 }
 
 export const Carousel = ({ products }: Props) => {
