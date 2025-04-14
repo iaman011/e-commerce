@@ -1,7 +1,6 @@
 # e-commerce
 
-
-Build a Modern Ecommerce Platform
+Build a Modern Ecommerce Platform : https://e-commerce-nextjs-iaman011s-projects.vercel.app/
 
 ⚙️ Tech Stack
 Next.js 15 – For server components and modern routing
